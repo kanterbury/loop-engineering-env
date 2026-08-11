@@ -1,0 +1,6 @@
+# 改行を LF に固定する。
+# Windows で CRLF に変換されると Prettier の format:check が落ち、
+# 実装と無関係な理由で verify が赤になってループが止まる。
+* text=auto eol=lf
+*.png binary
+*.svg text eol=lf

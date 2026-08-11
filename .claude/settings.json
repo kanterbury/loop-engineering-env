@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "permissions": {
+    "allow": [
+      "Read",
+      "Edit",
+      "Write",
+      "Glob",
+      "Grep",
+
+      "PowerShell(npm run *)",
+      "PowerShell(npm test *)",
+      "PowerShell(npm install *)",
+      "PowerShell(npm ci *)",
+      "PowerShell(npx tsc *)",
+      "PowerShell(npx vitest *)",
+      "PowerShell(npx playwright *)",
+      "PowerShell(npx prettier *)",
+      "PowerShell(npx eslint *)",
+      "PowerShell(git add *)",
+      "PowerShell(git commit *)",
+      "PowerShell(git status *)",
+      "PowerShell(git diff *)",
+      "PowerShell(git log *)",
+      "PowerShell(git show *)",
+      "PowerShell(git restore *)",
+
+      "Bash(npm run *)",
+      "Bash(npm test *)",
+      "Bash(npm install *)",
+      "Bash(npm ci *)",
+      "Bash(npx tsc *)",
+      "Bash(npx vitest *)",
+      "Bash(npx playwright *)",
+      "Bash(npx prettier *)",
+      "Bash(npx eslint *)",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(git status *)",
+      "Bash(git diff *)",
+      "Bash(git log *)",
+      "Bash(git show *)",
+      "Bash(git restore *)"
+    ],
+    "deny": [
+      "PowerShell(git push *)",
+      "PowerShell(git reset --hard *)",
+      "PowerShell(git clean *)",
+      "PowerShell(git rebase *)",
+      "PowerShell(npm publish *)",
+      "PowerShell(Remove-Item -Recurse *)",
+      "PowerShell(rm -rf *)",
+
+      "Bash(git push *)",
+      "Bash(git reset --hard *)",
+      "Bash(git clean *)",
+      "Bash(git rebase *)",
+      "Bash(npm publish *)",
+      "Bash(rm -rf *)"
+    ]
+  }
+}

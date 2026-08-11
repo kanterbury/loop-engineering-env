@@ -1,0 +1,31 @@
+.app {
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+  text-align: left;
+}
+
+.app h1 {
+  font-size: 1.75rem;
+  line-height: 1.2;
+  margin: 0 0 0.5rem;
+}
+
+.lead {
+  margin: 0 0 2rem;
+  opacity: 0.75;
+}
+
+.steps {
+  display: grid;
+  gap: 0.75rem;
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.steps code {
+  padding: 0.1em 0.4em;
+  border-radius: 4px;
+  background: rgba(127, 127, 127, 0.18);
+  font-size: 0.9em;
+}
