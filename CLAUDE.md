@@ -30,11 +30,13 @@ Vite + React 19 + TypeScript / Vitest + Testing Library / Playwright / ESLint + 
 ## 周回の手順（厳守）
 
 1. `.loop/state.md` と `.loop/backlog.md` を読む
-2. Todo から未完了タスクを **1つだけ** 選び、In Progress に移す
+2. backlog の未チェック（`- [ ]`）のタスクを上から **1つだけ** 選ぶ。着手中であることは state.md に書く
 3. 実装する（途中で `npm run verify:quick` を何度回してもよい）
 4. `npm run verify` を回す
-5. **緑なら** → コミット → backlog の該当タスクを Done へ（commit hash 付き）→ state.md 上書き → journal.md 追記
+5. **緑なら** → コミット → backlog の該当タスクを `- [x]` にして commit hash を付ける → state.md 上書き → journal.md 追記
 6. **赤なら** → 原因を直して 4 に戻る。連続失敗回数を state.md に記録する
+
+**backlog のタスクは移動させない。** その場でチェックを付けるだけにし、受け入れ条件は消さずに残す。何を根拠に完了としたかが後から読んで分かるようにするため。
 
 ### UI を変更した周回では、必ず目で確認する
 
@@ -69,7 +71,7 @@ T-003 タスクを完了/未完了にトグルできる
 
 - 同じタスクで `npm run verify` が **3回連続で失敗** した
   → journal.md に失敗内容と試したことを書いてから停止
-- backlog の Todo が空になった
+- backlog の未チェックタスクが無くなった
 - SPEC の解釈に迷った / SPEC に書かれていない判断を迫られた
   → **推測で実装せず** 停止して質問する
 - 停止条件を回避するために SPEC やテストを書き換えたくなった
